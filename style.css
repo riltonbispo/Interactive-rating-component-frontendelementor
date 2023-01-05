@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body{
+  font-family: 'Overpass';
+  font-size: 15px;
+  display: flex;
+  background-color: hsl(216, 12%, 8%);
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  width: 30%;
+}
+
+.box{
+  background-color: hsl(213, 19%, 18%);
+  padding: 40px;
+  border-radius: 15px;
+  line-height: 1.5;
+}
+
+.box h1{
+  margin-top: 1rem;
+  color: white;
+}
+
+.box p{
+  color: hsl(217, 12%, 63%);
+  margin-block: 0rem 1.5rem;
+}
+
+.main img{
+  border-radius: 50%;
+  padding: 0.9rem;
+  background-color: hsla(217, 12%, 63%, 0.219);
+}
+
+ul{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0rem 3rem;
+}
+
+.btn{
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 1rem;
+  color: hsl(217, 12%, 63%);
+  background-color: hsla(217, 12%, 63%, 0.219);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 900;
+}
+
+.btn:hover{
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+
+.btn:focus{
+  color: white;
+  background-color: hsl(216, 12%, 54%);
+}
+
+.submit{
+  border: none;
+  padding-block: 0.9rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  transition: 0.3s;
+}
+
+.submit:hover{
+  background-color: white;
+  letter-spacing: 0.5rem;
+  color: hsl(25, 97%, 53%);
+}
+
+.submitted{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.submitted .rate{
+  border-radius: 5rem;
+  padding: 0.3rem 0.6rem ;
+  display: inline-block ;
+  color:  hsl(25, 97%, 53%);
+  background-color: hsla(217, 12%, 63%, 0.219) ;
+  margin-top: 1rem;
+}
+
+.submitted h1{
+  margin-top: 0;
+}
+
+.submitted .thanks{
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1135px){
+  .container{
+    width: 80%;
+  }
+
+}
+
+.some{
+  display: none;
+}
+
+.back{
+  right: 40px;
+  bottom: 40px;
+  position: absolute;
+  border: none;
+  padding-block: 0.9rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  width: 3rem;
+  height: 3rem;
+  transition: 0.3s;
+}
+
+.back:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
